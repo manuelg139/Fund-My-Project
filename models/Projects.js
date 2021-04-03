@@ -28,12 +28,11 @@ Projects.init(
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-    },
-    date_created: {
-      type: DataTypes.DATE,
-      defaultValue: NOW(),
-      allowNull: false,
-      unique: false,
+    }, 
+    data_created:{
+        type: 'TIMESTAMP',
+        defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
+        allowNull: false
     },
     needed_funding: {
       type: DataTypes.BOOLEAN,
