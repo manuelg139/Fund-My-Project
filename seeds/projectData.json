@@ -1,7 +1,9 @@
 [
     {
-      "name": "Sal",
-      "email": "sal@hotmail.com",
-      "password": "password12345"
+      "name": "New Spider Man Project",
+      "description": "We are directing the new Animated Spider Man Movie",
+      "date_created": "",
+      "needed_funding": 1,
+      "user_id": 1
     }
 ]

@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, NOW } = require('sequelize');
 const sequelize = require('../config/connection');
 ////Project
 // id: primary key
@@ -28,11 +28,11 @@ Projects.init(
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
-    },
-    date_created: {
-      type: DataTypes.DATETIME,
-      allowNull: false,
-      unique: true,
+    }, 
+    data_created:{
+        type: 'TIMESTAMP',
+        defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
+        allowNull: false
     },
     needed_funding: {
       type: DataTypes.BOOLEAN,
