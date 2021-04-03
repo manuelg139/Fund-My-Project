@@ -1,13 +1,5 @@
 const { Model, DataTypes, NOW } = require('sequelize');
 const sequelize = require('../config/connection');
-////Project
-// id: primary key
-// name
-// description
-// date_created
-// needed_funding
-// user_id: foreign key that references User.id
-
 
 class Projects extends Model {
 }
