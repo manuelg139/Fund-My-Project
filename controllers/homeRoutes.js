@@ -23,7 +23,6 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  // TODO: Add a comment describing the functionality of this if statement
   if (req.session.logged_in) {
     res.redirect('/');
     return;
